@@ -44,3 +44,13 @@
     transition: all 0.3s ease-in-out;
     color: white;
 }
+
+.img-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.img-wrapper:hover img {
+    transition: all .5s;
+    transform: scale(1.1);
+}
