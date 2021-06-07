@@ -1,56 +1,54 @@
 #header {
+  .fixed {
+    width: 30vw;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: rgb(2, 0, 36);
+    // background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 81, 208, 1) 100%);
+    background: #0c2340;
+    // background: url('/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    > img {
+      width: 180px;
+    }
+
+    .social {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
     .fixed {
-        width: 30vw;
-        height: 100%;
-        position: fixed;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // background: rgb(2, 0, 36);
-        // background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 81, 208, 1) 100%);
-        background: #0C2340;
-        // background: url('/images/bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        >img {
-            width: 180px;
-        }
-
-        .social {
-            width: 50%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+      position: relative;
+      width: 100%;
+      height: 60vh;
     }
-
-
-    @media (max-width: 768px) {
-        .fixed {
-            position: relative;
-            width: 100%;
-            height: 60vh;
-        }
-    }
-
+  }
 }
 
 .btn:hover {
-    background-color: #0C2340;
-    transition: all 0.3s ease-in-out;
-    color: white;
+  background-color: #0c2340;
+  transition: all 0.3s ease-in-out;
+  color: white;
 }
 
 .img-wrapper {
-    max-width: 100%;
-    overflow: hidden;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .img-wrapper:hover img {
-    transition: all .5s;
-    transform: scale(1.1);
+  transition: all 0.5s;
+  transform: scale(1.05);
 }
